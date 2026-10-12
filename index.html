@@ -19,11 +19,33 @@
     color: #2563eb;
     font-size: 36px;
   }
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
 </style>
 </head>
 <body>
   <h1>你好，我的网站开张了！</h1>
   <p>我是Lucas，这是我亲手制作的第一个网站！。</p>
   <p>我喜欢旅行、音乐和美食。</p>
+<button onclick="sayHello()">点我打个招呼</button>
+<p id="message"></p>
+
+<script>
+  function sayHello() {
+    document.getElementById("message").textContent =
+      "欢迎来到 Lucas 的网站！";
+  }
+</script>
 </body>
 </html>
